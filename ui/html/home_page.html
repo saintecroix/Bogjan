@@ -1,0 +1,455 @@
+<!doctype html>
+<html style="font-size: 16px;" lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<div class="container-4">
+    <div class="container-18">
+        <div class="frame-37">
+            <p class="container-5">
+                <span class="container-5-sub-0"></span><span class="container-5-sub-70"></span><span></span>
+            </p>
+            <button class="container-6" id="open-modal-button">
+        <span class="container-60">
+          Заявка на перевозку грузов
+        </span>
+            </button>
+        </div>
+        <div id="modal" style="display: none;">
+                <form id="form" class="group-207" action="/send-to-mail" method="POST">
+                    <div class="container">
+                        Расчёт стоимости грузоперевозок
+                    </div>
+                    <input type="text" id="name" class="frame-144" placeholder="Как к Вам обращаться?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Как к Вам обращаться?'">
+                    <input type="tel"  id="phone" class="frame-144" placeholder="Номер" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Номер'"/>
+                    <input type="email" id="email" class="frame-144" placeholder="Почта" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Почта'"/>
+                    <input type="text" id="goods" class="frame-144" placeholder="Какой везти груз?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Какой везти груз?'">
+                    <select id="from" class="frame-144" >
+                        <option value="">Откуда?</option>
+                        <option value="Владивосток">Владивосток</option>
+                        <option value="Волгоград">Волгоград</option>
+                        <option value="Воронеж">Воронеж</option>
+                        <option value="Иркутск">Иркутск</option>
+                        <option value="Краснодар">Краснодар</option>
+                        <option value="Красноярск">Красноярск</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Мурманск">Мурманск</option>
+                        <option value="Новая Чара">Новая Чара</option>
+                        <option value="Новосибирск">Новосибирск</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Сосногорск">Сосногорск</option>
+                        <option value="Чебоксары">Чебоксары</option>
+                        <option value="Челябинск">Челябинск</option>
+                        <option value="Чита">Чита</option>
+                        <option value="Южно-сахалинск">Южно-сахалинск</option>
+                    </select>
+                    <select id="to" class="frame-144">
+                        <option value="">Куда?</option>
+                        <option value="Владивосток">Владивосток</option>
+                        <option value="Волгоград">Волгоград</option>
+                        <option value="Воронеж">Воронеж</option>
+                        <option value="Иркутск">Иркутск</option>
+                        <option value="Краснодар">Краснодар</option>
+                        <option value="Красноярск">Красноярск</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Мурманск">Мурманск</option>
+                        <option value="Новая Чара">Новая Чара</option>
+                        <option value="Новосибирск">Новосибирск</option>
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Сосногорск">Сосногорск</option>
+                        <option value="Чебоксары">Чебоксары</option>
+                        <option value="Челябинск">Челябинск</option>
+                        <option value="Чита">Чита</option>
+                        <option value="Южно-сахалинск">Южно-сахалинск</option>
+                    </select>
+
+                    <input type="submit" value="Заказать перевозку">
+                </form>
+
+        </div>
+        <div class="frame-358">
+            <div class="frame-261">
+                <div class="frame-161">
+                    <div class="frame-162">
+                        <div class="container-46">
+                            Подвижной состав
+                        </div>
+                        <span class="container-47">
+              В настоящее время в нашем управлении агрегировано более 12 000 единиц подвижного состава, среди которых есть:
+            </span>
+                    </div>
+                    <div class="frame-163">
+                        <div class="frame-168">
+                            <div class="frame-173">
+                                <div class="rectangle-548">
+                                </div>
+                                <div class="group-212">
+                                    <div class="container-50">
+                                        Платформы
+                                    </div>
+                                    <div class="frame-182">
+                                        <div class="container-48">
+                      <span class="container-63">
+                        Подробнее
+                      </span>
+                                        </div>
+                                        <div class="container-49">
+                      <span class="container-64">
+                        Заказать
+                      </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-39">
+                            </div>
+                        </div>
+                        <div class="frame-171">
+                            <div class="frame-177">
+                                <div class="rectangle-5482">
+                                </div>
+                                <div class="group-215">
+                                    <div class="container-51">
+                                        Полувагоны
+                                    </div>
+                                    <div class="frame-1821">
+                                        <div class="container-52">
+                      <span class="container-65">
+                        Подробнее
+                      </span>
+                                        </div>
+                                        <div class="container-53">
+                      <span class="container-66">
+                        Заказать
+                      </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-40">
+                            </div>
+                        </div>
+                        <div class="frame-172">
+                            <div class="frame-176">
+                                <div class="rectangle-549">
+                                </div>
+                                <div class="group-216">
+                                    <div class="container-54">
+                                        Крытые вагоны
+                                    </div>
+                                    <div class="frame-1822">
+                                        <div class="container-55">
+                      <span class="container-67">
+                        Подробнее
+                      </span>
+                                        </div>
+                                        <div class="container-56">
+                      <span class="container-68">
+                        Заказать
+                      </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-41">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-344">
+          <span class="container-57">
+            Услуги, предоставляемые компанией
+          </span>
+                </div>
+                <div class="frame-131">
+                    <div class="frame-47">
+                        <div class="frame-158">
+              <span class="container-58">
+                Предоставление <br />
+                грузовых вагонов
+              </span>
+                        </div>
+                        <div class="frame-160">
+              <span class="container-59">
+                Организация отправки <br />
+                грузов и сложной техники
+              </span>
+                        </div>
+                    </div>
+                    <div class="frame-48">
+                        <div class="frame-180">
+                            <img class="group-218" src="../static/vectors/group_218_x2.svg" />
+                            <div class="rectangle-555">
+                            </div>
+                            <span class="container">
+                Экспедирование<br />
+                и оплата тарифов
+              </span>
+                        </div>
+                        <div class="frame-157">
+              <span class="container-1">
+                Информационное обеспечение перевозок
+              </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="container-2">
+                    <span class="container-2-sub-0"></span><span class="container-2-sub-316"></span><span class="container-2-sub-0"></span><span class="container-2-sub-316"></span><span class="container-2-sub-0"></span><span class="container-2-sub-316"></span><span class="container-2-sub-0"></span><span class="container-2-sub-316"></span><span class="container-2-sub-0"></span><span></span>
+                </p>
+                <div class="frame-359">
+                    <div class="frame-360">
+                        <div class="container-3">
+                            Основные направления перевозок
+                        </div>
+                        <div class="group-209">
+                            <img class="group-205" src="../static/vectors/group_205_x2.svg" />
+                            <img class="vector-22" src="../static/vectors/vector_22_x2.svg" />
+                            <img class="vector-23" src="../static/vectors/vector_23_x2.svg" />
+                            <img class="group-208" src="../static/vectors/group_208_x2.svg" />
+                            <div class="container-10">
+                <span class="container-9">
+                  Мурманск
+                </span>
+                                <div class="ellipse-62">
+                                </div>
+                            </div>
+                            <div class="container-3">
+                                <div class="ellipse-56">
+                                </div>
+                                <span class="container-14">
+                  Сосногорск
+                </span>
+                            </div>
+                            <div class="container-19">
+                <span class="container-8">
+                  Санкт-Петербург
+                </span>
+                                <div class="ellipse-61">
+                                </div>
+                            </div>
+                            <div class="container-13">
+                                <div class="container-8">
+                  <span class="container-7">
+                    Москва
+                  </span>
+                                    <div class="ellipse-47">
+                                    </div>
+                                </div>
+                                <div class="container-7">
+                                    <div class="ellipse-58">
+                                    </div>
+                                    <div class="container-11">
+                                        Чебоксары
+                                    </div>
+                                    <div class="ellipse-50">
+                                    </div>
+                                    <div class="container-12">
+                                        Челябинск
+                                    </div>
+                                </div>
+                                <div class="container-6">
+                                    <div class="container-15">
+                                        <div class="ellipse-51">
+                                        </div>
+                                        <span class="container-13">
+                      Новосибирск
+                    </span>
+                                    </div>
+                                    <div class="container-4">
+                                        <div class="ellipse-52">
+                                        </div>
+                                        <span class="container-15">
+                      Красноярск
+                    </span>
+                                    </div>
+                                </div>
+                                <div class="container-17">
+                                    <div class="ellipse-55">
+                                    </div>
+                                    <span class="container-20">
+                    Новая Чара
+                  </span>
+                                </div>
+                            </div>
+                            <div class="container-12">
+                                <div class="container-14">
+                  <span class="container-10">
+                    Воронеж
+                  </span>
+                                    <div class="ellipse-60">
+                                    </div>
+                                </div>
+                                <div class="container-9">
+                                    <div class="ellipse-54">
+                                    </div>
+                                    <div class="container-16">
+                                        Иркутск
+                                    </div>
+                                    <div class="ellipse-53">
+                                    </div>
+                                    <div class="container-17">
+                                        Чита
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                <span class="container-21">
+                  Волгоград
+                </span>
+                                <div class="ellipse-59">
+                                </div>
+                            </div>
+                            <div class="container-11">
+                                <div class="container-2">
+                  <span class="container-22">
+                    Краснодар
+                  </span>
+                                    <div class="ellipse-57">
+                                    </div>
+                                </div>
+                                <div class="container-1">
+                                    <div class="ellipse-48">
+                                    </div>
+                                    <div class="container-16">
+                                        <div class="ellipse-49">
+                                        </div>
+                                        <span class="container-19">
+                      Владивосток
+                    </span>
+                                    </div>
+                                    <div class="container-18">
+                                        Южно-сахалинск
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-23">
+            <span class="container-61">
+              Подать заявку на перевозку грузов
+            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="frame-42">
+                <div class="frame-178">
+                    <div class="frame-107">
+                        <div class="frame-134">
+                            <img class="group-206" src="../static/vectors/group_206_x2.svg" />
+                        </div>
+                        <div class="container-24">
+                            Универсальные решения
+                        </div>
+                    </div>
+                    <div class="frame-143">
+                        <div class="frame-108">
+                            <div class="container-25">
+                                Контактные данные:
+                            </div>
+                            <p class="container-26">
+                                <span class="container-26-sub-14"></span><span></span>
+                            </p>
+                            <p class="container-27">
+                                <span class="container-27-sub-14"></span><span></span>
+                            </p>
+                            <p class="office-vagonzakazyandex-ru">
+                                <span class="office-vagonzakazyandex-ru-sub-75"></span><span></span>
+                            </p>
+                            <div class="frame-136">
+                                <p class="icq-whatsapp-telegram-79264668648">
+                                    <span class="icq-whatsapp-telegram-79264668648-sub-14"></span><span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="frame-116">
+                            <div class="container-28">
+                                Адрес:
+                            </div>
+                            <div class="frame-111">
+                                <div class="container-29">
+                                    124365
+                                </div>
+                                <div class="container-30">
+                                    г.Москва
+                                </div>
+                                <div class="container-31">
+                                    г.Зеленоград
+                                </div>
+                                <span class="container-32">
+                  корп.1803, оф.70
+                </span>
+                            </div>
+                        </div>
+                        <div class="frame-115">
+                            <div class="container-33">
+                                Компания:
+                            </div>
+                            <div class="frame-112">
+                                <div class="container-34">
+                                    О нас
+                                </div>
+                                <div class="container-35">
+                                    Услуги
+                                </div>
+                                <div class="container-36">
+                                    Вагоны
+                                </div>
+                                <span class="container-37">
+                  Маршруты
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="container-38">
+          © ООО «Универсальные решения»
+        </span>
+            </div>
+        </div>
+    </div>
+    <div class="group-233">
+        <div class="group-13">
+            <img class="group-3" src="../static/vectors/group_3_x2.svg" />
+            <div class="container-5">
+                <div class="container-39">
+                    Универсальные<br />
+                    Решения
+                </div>
+                <div class="vector-8-stroke">
+                </div>
+            </div>
+        </div>
+        <div class="frame-268">
+            <div class="container-40">
+                Главная
+            </div>
+            <div class="container-41">
+                О компании
+            </div>
+            <div class="container-42">
+                Подвижной состав
+            </div>
+            <div class="container-43">
+                Услуги
+            </div>
+            <div class="container-44">
+                Контакты
+            </div>
+            <div class="container-45">
+                <button id="modal1" class="open-modal-button">
+                    <span class="container-62">
+                      Заявка на перевозку
+                    </span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../static/js/main.js"></script>
+</body>
+</html>

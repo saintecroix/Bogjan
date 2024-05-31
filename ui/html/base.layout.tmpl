@@ -1,0 +1,62 @@
+{{define "base"}}
+<!doctype html>
+<html style="font-size: 16px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<header>
+    <div class="group-233">
+        <div class="group-13">
+            <img class="group-3" src="../assets/vectors/Unknown" />
+            <div class="container-2">
+                <div class="container-59">
+                    Универсальные<br />
+                    Решения
+                </div>
+                <div class="vector-8-stroke">
+                </div>
+            </div>
+        </div>
+        <div class="frame-268">
+            <div class="container-3">
+                Главная
+            </div>
+            <div class="container-4">
+                О компании
+            </div>
+            <div class="container-5">
+                Подвижной состав
+            </div>
+            <div class="container-6">
+                Услуги
+            </div>
+            <div class="container-7">
+                Контакты
+            </div>
+            <div class="container-23">
+        <span class="container-61">
+          Заявка на перевозку
+        </span>
+            </div>
+        </div>
+    </div>
+</header>
+    <div>
+            <div>
+            <main>
+                {{template "main" .}}
+            </main>
+            </div>
+    </div>
+    <!-- Всплывающее окно заявки -->
+
+</body>
+{{template "footer" .}}
+</html>
+{{end}}
