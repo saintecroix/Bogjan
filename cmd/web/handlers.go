@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"fmt"
 	"html/template"
 	"net/http"
 	"net/smtp"
@@ -39,7 +40,7 @@ func (app *application) send_to_mail(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	name := r.FormValue("Name")
+	name := r.FormValue("name")
 	phone := r.FormValue("phone")
 	email := r.FormValue("email")
 	goods := r.FormValue("goods")
@@ -49,6 +50,7 @@ func (app *application) send_to_mail(w http.ResponseWriter, r *http.Request) {
 	sendData := "Subject: Заявка на грузоперевозку \n" + "Оставлена заявка: \n" + "Имя:" + name + "\n Телефон: " + phone + "\n Почта: " + email + "\n Груз: " +
 		goods + "\n Откуда: " + from + "\n Куда: " + to
 
+	fmt.Println(sendData)
 	err := sendMail(sendData)
 	if err != nil {
 		app.serverError(w, err)
